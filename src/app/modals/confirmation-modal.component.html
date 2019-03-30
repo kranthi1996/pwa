@@ -1,0 +1,46 @@
+<div class="modal-body">
+    <div class="row">
+        <div class="col-md-12">
+            <h4 class="word-wrap">{{message}}</h4>
+            <div class="box-footer text-center">
+                <span *ngIf="!isInfoModal">
+                    <div class="row btn-padding">
+                        <div class="offset-md-3 col-md-2">
+                    <button class="button-all btn" (click)="submit(true)">Yes</button>
+                </div>
+                <div class="offset-md-1 col-md-2">
+                    <button class="button-all btn" (click)="submit(false)">No</button>
+                </div>
+            </div>
+                </span>
+                <span *ngIf="isInfoModal">
+                    <button class="button-all btn" (click)="submit(true)">Ok</button>
+                </span>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!--
+<div class="modals-body modalfigure text-center">
+    <div class="row">
+        <div class="col-md-3"></div>
+
+        <div class="col-md-6  text-center">
+            <b class="modaltext">USER ID: {} SUCCESSFULLY</b>
+        </div>
+        <div class="col-md-3"></div>
+    </div>
+
+    <div class="row">
+        <div class="col-lg-4"></div>
+        <div class="col-lg-2 modalbut text-center">
+            <button data-dismiss="modals" type="button" class="button-all  ">
+                <label class="modalok">Ok</label>
+            </button>
+        </div>
+
+    </div>
+
+</div>-->
